@@ -1,0 +1,220 @@
+# T=int(input())
+# ans=[]
+# count=0
+# # li=[]
+# for i in range(T):
+#     n=int(input())
+#     tra=int(input())
+#     li=[int(a) for a in str(tra)]
+
+#     if(len(set(li))==1):
+#         print("0")
+#     else:
+#         for j in range(len(li)):
+#             if(li[j] == 0):
+#                 count+=1
+#                 pass
+#             else:
+#                 continue
+# print(count+1)
+
+# li=list(map(int,input().split()))
+# print(li)
+# on=[]
+# ze=[]
+# for i in range(len(li)):
+#     if li[i] ==1:
+#         on.append(i)
+#     else:
+#         ze.append(i)
+# print(on,ze)
+# print(abs(3-4))
+
+
+# n=int(input())
+
+
+# n=5
+# count=0
+# for i in range(0,n):
+#     for j in range(i,n):
+#         print(" ",end="")
+#     for k in range(0,i):
+#         print("*",end="")
+#     for l in range(1,i):
+#         print("*",end="")
+#     print()
+# for i in range(0,n):
+#     for j in range(0,i):
+#         print(" ",end="")
+#     for k in range(0,n):
+#         print("*",end="")
+
+#     print()
+
+# n=5
+# li=[9,6,5,4,3,1,8,9,0]
+# if n in li:
+#     print("found at position",li.index(n)+1)
+# else:
+#     print(n,"elements is not present")
+
+# for i in range(len(li)):
+#     if(li[i]==n):
+#         print(i)
+#     else:
+#         pass
+# for i in range(len(li)+1):
+#     for j in range(i+1,len(li)):
+#         if(li[i]>li[j]):
+#             li[i],li[j]=li[j],li[i]
+# print(li)
+
+# for i in range(1,len(li)):
+#     temp=li[i]
+#     j=i-1
+#     while(j>=0 and li[j]>temp):
+#         li[j+1]=li[j]
+#         j-=1
+#     li[j+1]=temp
+# print(li)
+
+# n=input()
+# l=["a","e","i","o","u"]
+# count=0
+# for i in n:
+#     if i in l:
+#         count+=1
+# print(count)
+# n=input()
+# l=['a','e','i','o','u']
+# dct={}
+
+# for i in n:
+#     if i in l:
+#        dct[i]=n.count(i)
+#        print(dct)
+# print(dct)
+
+
+# def arr(arr2):
+#     a=[]
+#     b=[]
+#     for i in arr2:
+#         if i%2==0:
+#             a.append(i)
+#         else:
+#             b.append(i)
+#     return a+b
+
+# inp=int(input())
+# arr2=list(map(int,input().split()))[:inp]
+# res=arr(arr2)
+# print(" ".join([str(re) for re in res]))
+
+# n=3
+# ar=[1,2,3,4]
+# k=3
+# '''
+# 1+2=3  3*3=9
+# 3+3=6  6*3=18
+# total 9+18=27
+# '''
+# ans=27
+# a=[]
+# su=sum(ar)*k
+# b=[]
+# b.append(su)
+# def func(ar,k):
+#     li=[]
+#     for i in range(0,len(ar)-1,2):
+#         c=ar[i]+ar[i+1]
+#         li.append(c)
+#     if len(li)>1:
+#         func(li,k)
+#     print(li)
+# if len(ar)%2!=0:
+#     x=ar.pop(len(ar)-1)
+#     a.append(x)
+# func(ar,k)
+
+
+'''
+CreaTING A CLASS AND ACCESSING IT USING METHODS 
+AND FUNCTIONS
+'''
+# class main():
+#     _india=0
+#     def __init__(self,name,ind):
+#         self.na=name
+#         self._india=ind
+#     def ss(rj):
+#         print(rj.na,rj._india)
+
+# class student(main):
+#     def pinky(aj):
+#         super().ss()
+
+#         return "hello pinky",aj.na,aj._india
+# class third(student):
+#     # def __init__(dss,req):
+#     #     dss.it=req
+#     def ret(fs):
+#         super().pinky()
+#         return "sdf"
+
+# m=main("hello","india")
+# print(m.na)
+# # print(m.ss())
+# s=student("hello","india")
+# print(s.pinky())
+# print(s.na)
+# s.na="vicky"
+# s.india="hello"
+# print(s.na)
+# t=third("hello","sdf")
+# print(t.ret())
+
+# x=lambda a,b:a**b
+# for i in range(int(input())):
+#     print(x(i,2))
+
+'''
+HCF OF TWO NUMBERS
+'''
+# a,d=int(input()),int(input())
+
+# def ads(a):
+#     l=[]
+#     b=lambda a,c:a%c
+#     for i in range(1,a+1):
+#         if b(a,i)==0:
+#             l.append(i)
+#         else:
+#             pass
+#     return l
+#     l=[]
+# l1=ads(a)
+# l2=ads(d)
+# for i in l1:
+#     if i in l2:
+#         print(i,end=' ')
+
+'''
+HCF AND LCM ARE GIVEN
+'''
+print('''
+       option 1: Having LCM and HCF
+       
+''')
+num1=int(input("Enter the first num \n"))
+num2=int(input("Enter the second num \n"))
+
+
+
+
+# a=int(input())
+# b =lambda a, c: a % c
+# for i in range(1, a+1):
+#     if b(a, i) == 0:
+#         print(i)

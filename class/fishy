@@ -1,0 +1,14 @@
+import IIndclass as im
+
+class second(im.first):
+    def add(simon):
+        super()
+        super().add(22)
+        print(simon.name,"im second")
+
+a=second(12)
+print(a)
+a.add()
+b=im.third()
+b.ss()
+b.diff()
