@@ -2,5 +2,10 @@
     "python.formatting.provider": "autopep8",
     "snipped.autoCopy": false,
     "snipped.enableLogo": false,
-    "snipped.enablePng": true
+    "snipped.enablePng": true,
+    "python.testing.pytestArgs": [
+        "class"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true
 }

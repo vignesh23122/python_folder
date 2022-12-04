@@ -76,15 +76,5 @@
 # for i in range(1,int(input())):
 #     print(i%5==0,end="\n")
 
-t = int(input().strip())
-li=[]
 
-for a in range(t):
-    n = int(input().strip())
-    sum=0
-    for i in range(1,n):
-        if i%3==0 or i%5==0:
-            sum+=i
-    li.append(sum)
-for i in li:
-    print(li)
+
