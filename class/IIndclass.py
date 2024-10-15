@@ -1,3 +1,4 @@
+
 class first():
     def __init__(self, name):
         self.name = name
@@ -10,7 +11,7 @@ class first():
         return f'{self.name}("hello")'
 
 
-class third():
+class third(first):
     def ss(sss):
         print("im third")
 

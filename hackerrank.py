@@ -100,3 +100,21 @@
 # 	print(sum(res))
 
 
+from re import A
+
+t=int(input())
+a=1
+b=1
+li=[]
+l2=[]
+for i in range(t):
+    n=int(input())
+    for i in range(n):
+        a+=b
+        a,b=b,a
+        li.append(a)
+    for x in (li):
+        if x%2==0:
+            l2.append(x)
+    print(sum(l2))
+    
